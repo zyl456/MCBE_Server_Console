@@ -257,7 +257,7 @@ function main ()
 						echo "mcbe服务器正在运行，此时备份存档小概率会导致存档损坏，最好在服务器内没有玩家的情况下进行，你想要怎么做？"
 						read -p "[R-关闭服务器并备份，I-直接备份，C-取消且不进行任何操作]：" reboot_stop
 						case $reboot_stop in
-							[])
+							[Rr])
 								backup_answer=1
 								stop
 								backup
